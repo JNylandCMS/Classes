@@ -1,15 +1,17 @@
 
 class CarClass:
 
-    def __init__(self, wheels, windows, doors, leatherSeats =  False):
+    def __init__(self, wheels, colour, doors, price, engine_size, leatherSeats =  False):
         self.wheels = wheels
-        self.windows = windows
+        self.colour = colour
         self.doors = doors
+        self.price = price
+        self.engine_size = engine_size
         self.leatherSeats = leatherSeats
 
 
 
-    def ChangeWindowsNumbers(seklf, no):
+    def ChangeColour(self, no):
         self.windows = no
         
 
@@ -18,15 +20,17 @@ class CarClass:
 
 
 
-toyota = CarClass(4,2,4)
+toyota = CarClass(4,"red", 4, 25000, 2 )
 
 toyota.ChangeDoorsNumber(2)
-print("here")
+print(toyota.colour)
+print(toyota.price)
+print(toyota.engine_size)
 
-Ford = CarClass(4,1,2, leatherSeats=True )
+'''Ford = CarClass(4,1,2, leatherSeats=True )'''
 
-if Ford.leatherSeats == True:
+'''if Ford.leatherSeats == True:
     print("this car has leather seats")
 else:
-    print("this car doesent have leather seats")
+    print("this car doesnt have leather seats")'''
     
